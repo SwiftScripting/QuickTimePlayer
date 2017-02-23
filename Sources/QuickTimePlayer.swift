@@ -46,9 +46,9 @@ import ScriptingBridge
     @objc optional func quitSaving(_ saving: QuickTimePlayerSaveOptions) // Quit the application.
     @objc optional func exists(_ x: Any!) -> Bool // Verify that an object exists.
     @objc optional func openURL(_ x: String!) // Open a URL.
-    @objc optional func newMovieRecording() ->  // Create a new movie recording document.
-    @objc optional func newAudioRecording() ->  // Create a new audio recording document.
-    @objc optional func newScreenRecording() ->  // Create a new screen recording document.
+    @objc optional func newMovieRecording() -> QuickTimePlayerDocument // Create a new movie recording document.
+    @objc optional func newAudioRecording() -> QuickTimePlayerDocument // Create a new audio recording document.
+    @objc optional func newScreenRecording() -> QuickTimePlayerDocument // Create a new screen recording document.
     @objc optional func videoRecordingDevices() -> SBElementArray
     @objc optional func audioRecordingDevices() -> SBElementArray
     @objc optional func audioCompressionPresets() -> SBElementArray
